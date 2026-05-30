@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+} 
+
+body {
+    background-color: #f8f2ff;
+    font-family: 'Montserrat';
+    font-weight: 400; 
+    font-size: 18px; 
+    color: #2d2238;
+    margin: 0; 
+    padding: 0; 
+    list-style: none; 
+    text-decoration: none;
+}
+
+.header {
+    background-color: #d8c4f0;
+    padding: 15px; 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    margin: 0 auto;
+    gap:100px; 
+    position: sticky;
+    top: 0;
+}
+.about {
+    background-color: #eee0ff;
+    padding: 50px;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    gap:40px;
+    font-size:20px;
+}
+
+.about img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    margin-right: 40px;
+}
+
+.experience {
+    background-color: white;
+    padding: 40px;
+}
+
+.education {
+    background-color: #eee0ff;
+    padding: 40px;
+}
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.nav {
+	display: flex;       /* Включаем flexbox */
+	gap: 30px; 
+}
+.nav a{
+	text-decoration: none;
+}
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index:10;
+}
+
+
+#preloader.hide-preloader {
+    display: none;
+}
+
+#formBlock {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: white;
+    padding-top: 100px;
+    text-align: center;
+    z-index:20;
+}
+
+#formBlock.show-form {
+    display: block;
+}
+
+#formBlock input {
+    width: 300px;
+    padding: 10px;
+    margin: 5px;
+}

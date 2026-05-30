@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лендинг Таисии</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="images/logo.png" alt="Логотип">
+        </div>
+
+        <nav class="nav">
+            <a href="#about">Обо мне</a>
+            <a href="#experience">Опыт работы</a>
+            <a href="#education">Образование</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+    </header>
+
+    <div class="about" id="about">
+    <img src="images/my-photo.jpg" alt="Моё фото">
+    <div class="aboutText">
+    <h1>Обо мне</h1>
+    <p>
+        Меня зовут Таисия. Я учусь на 2 курсе МГТУ им. Н. Э. Баумана.
+        Изучаю анализ данных, умею работать в команде, люблю читать
+        и развиваться в новых направлениях.
+    </p>
+</div>
+</div>
+        <div class="experience" id="experience">
+            <h2>Опыт работы</h2>
+
+            <p><b>2022–2024</b> — волонтёрские проекты.</p>
+            <p><b>2024–2025</b> — подработка.</p>
+            <p><b>2025–2026</b> — работа репетитором.</p>
+        </div>
+
+        <div class="education" id="education">
+            <h2>Образование</h2>
+
+            <p><b>Учебное заведение:</b> МГТУ им. Н. Э. Баумана</p>
+            <p><b>Направление:</b> Инженерный бизнес и менеджмент</p>
+            <p><b>Профиль:</b> Промышленная логистика</p>
+        </div>
+
+        <div class="contacts" id="contacts">
+            <h2>Контакты</h2>
+            <p>
+                <b>Телефон:</b>
+                <a href="tel:+79165543211">8 916 554-32-11</a>
+            </p>
+
+            <p>
+                <b>Почта:</b>
+                <a href="mailto:taya.nnn@yandex.ru">taya.nnn@yandex.ru</a>
+            </p>
+
+            <p><b>Время для связи:</b> понедельник — пятница, с 10:00 до 19:00</p>
+
+            <p><b>Место учёбы:</b> МГТУ им. Н. Э. Баумана</p>
+
+            <div class="map">
+               <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8fc8ba757eb9a47730202846ce358e430282b38b2ca92369b63c8c7313f590ac&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>            </div>
+        </div>
+
+    </div>
+    <footer class="footer">
+        <p>© 2026 Таисия</p>
+    </footer>
+<div id="preloader">
+    <img src="images/preloader.gif" alt="загрузка страницы">
+</div>
+
+<script src="JS/script.js"></script>
+</body>
+</html>
+
+<button onclick="openForm()">Открыть форму</button>
+
+<div id="formBlock">
+    <form method="post">
+        <h2>Форма обратной связи</h2>
+
+        <p><input type="text" name="name" placeholder="Имя"></p>
+        <p><input type="text" name="phone" placeholder="Телефон"></p>
+        <p><input type="text" name="email" placeholder="Почта"></p>
+        <p><input type="text" name="topic" placeholder="Тема"></p>
+        <p><input type="text" name="time" placeholder="Время связи"></p>
+        <p><input type="text" name="message" placeholder="Сообщение"></p>
+
+        <p><input type="submit" value="Отправить"></p>
+        <button type="button" onclick="closeForm()">Закрыть</button>
+    </form>
+</div>
